@@ -54,18 +54,25 @@
   angular
   .module('VotingApp.controllers', ['ngMaterial'])
   .controller('VotingMainCtrl', function ($scope, $mdDialog, timeouts, appData) {
-    $scope.showSettings = function(ev) {
-      $mdDialog.show({
-        controller: SettingsDialogController,
-        templateUrl: '../templates/settings.html',
-        targetEvent: ev,
-      })
-      .then(function(answer) {
-        $scope.alert = 'You said the information was "' + answer + '".';
-      }, function() {
-        $scope.alert = 'You cancelled the dialog.';
-      });
-    };
+    var showSettings = function(ev) {
+          $mdDialog.show({
+            controller: SettingsDialogController,
+            templateUrl: '../templates/settings.html',
+            targetEvent: ev,
+          })
+          .then(function(answer) {
+            $scope.alert = 'You said the information was "' + answer + '".';
+          }, function() {
+            $scope.alert = 'You cancelled the dialog.';
+          });
+        };
+    $scope.$on(
+      'settings:none', 
+      function(event){
+        showSettings(event);
+      }
+    );
+    $scope.showSettings = showSettings;
 
   })
   .controller('LoginCtrl', function ($scope, $rootScope, $mdDialog, timeouts, appData, users) {

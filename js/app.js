@@ -34,7 +34,9 @@
           Restangular.setBaseUrl(server.get());
           serialport.open();
           $state.transitionTo('login');
-        } 
+        } else {
+          $rootScope.$broadcast('settings:none');
+        }
       }
     )
     .config(function($stateProvider, $urlRouterProvider, RestangularProvider) {
