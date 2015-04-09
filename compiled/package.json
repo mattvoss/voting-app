@@ -5,7 +5,7 @@
   "author": "Matt Voss",
   "repository": "git@github.com:mattvoss/ha-event-server.git",
   "keywords": [],
-  "main": "html/index.html",
+  "main": "templates/index.html",
   "window": {
     "title": "node-webkit demo",
     "toolbar": true,

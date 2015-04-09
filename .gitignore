@@ -6,7 +6,7 @@ platforms/
 plugins/
 compiled/js/*.js
 compiled/css/*.css
-compiled/html/*.html
+compiled/templates/*.html
 compiled/node_modules
 builds/
 cache/

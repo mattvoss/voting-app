@@ -96,7 +96,7 @@ module.exports = function(grunt) {
             src: [
               'templates/*.html'
             ],
-            dest: 'compiled/html',
+            dest: 'compiled/templates',
             filter: 'isFile'
           }
         ]
