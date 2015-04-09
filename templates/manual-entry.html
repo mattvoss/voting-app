@@ -1,0 +1,22 @@
+<md-dialog aria-label="Manual Entry">
+  <md-content class="sticky-container">
+    <md-subheader class="md-sticky-no-effect">Enter Badge ID</md-subheader>
+    <div class="dialog-content">
+      <div flex>
+        <md-input-container>
+          <label>Badge ID</label>
+          <input ng-model="values.badgeid" placeholder="Enter your badge ID" ng-model="values.badgeid"  />
+        </md-input-container>
+      </div>
+    </div>
+  </md-content>
+  <div class="md-actions" layout="row">
+    <span flex></span>
+    <md-button ng-click="cancel()">
+      Cancel
+    </md-button>
+    <md-button ng-click="submit()" class="md-primary">
+      Done
+    </md-button>
+  </div>
+</md-dialog>

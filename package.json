@@ -1,0 +1,49 @@
+{
+  "name": "voting-app-nw",
+  "description": "Voting App",
+  "version": "0.1.0",
+  "author": "Matt Voss",
+  "repository": "git@github.com:mattvoss/ha-event-server.git",
+  "keywords": [],
+  "main": "compiled/html/index.html",
+  "window": {
+    "toolbar": true,
+    "resizable": true,
+    "width": 1000,
+    "height": 600,
+    "min_width": 600,
+    "min_height": 400,
+    "position": "center"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "handlebars": "^3.0.1",
+    "hexy": "^0.2.7",
+    "moment": "^2.9.0",
+    "nconf": "^0.7.1",
+    "redis": "^0.12.1",
+    "serialport": "^1.6.3",
+    "sf": "0.1.6",
+    "swag": "^0.7.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-bower-task": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-handlebars": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-nodeunit": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-execute": "latest",
+    "grunt-express-server": "latest",
+    "grunt-json": "latest",
+    "grunt-node-inspector": "latest",
+    "grunt-node-webkit-builder": "^1.0.2",
+    "grunt-shell": "^1.1.2",
+    "matchdep": "latest"
+  }
+}
